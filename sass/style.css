@@ -69,7 +69,7 @@ ul {
 }
 
 .button:hover {
-  background-color: #48d4fa;
+  background-color: #93e6fc;
   color: #0897f5;
 }
 
@@ -358,9 +358,22 @@ ul {
 .decision-block {
   padding: 1rem 2.8rem 4rem;
   min-height: 41rem;
-  -webkit-box-shadow: 7px 12px 21px 0px rgba(0, 0, 0, 0.17);
-          box-shadow: 7px 12px 21px 0px rgba(0, 0, 0, 0.17);
+  -webkit-box-shadow: 3px 7px 10px 0px rgba(0, 0, 0, 0.17);
+          box-shadow: 3px 7px 10px 0px rgba(0, 0, 0, 0.17);
   text-align: center;
+  overflow: hidden;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.decision-block:hover {
+  -webkit-box-shadow: 10px 15px 24px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 10px 15px 24px 0px rgba(0, 0, 0, 0.3);
+}
+
+.decision-block:hover .decision-block-img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .decision-block h4 {
@@ -368,14 +381,21 @@ ul {
   font-size: 1.9rem;
 }
 
-.decision-block img {
+.decision-block-img {
+  -webkit-transition: all 1s linear;
+  transition: all 1s linear;
+}
+
+.decision-block-img img {
   margin-bottom: 2rem;
   display: inline-block;
   max-height: 258px;
+  width: 100%;
 }
 
 .decision-block p {
-  min-height: 3rem;
+  font-size: 1.1rem;
+  min-height: 4rem;
 }
 
 .allegiance {
@@ -431,5 +451,73 @@ ul {
   height: 3rem;
   background: url(../../img/benefit/check.svg) center no-repeat;
   background-size: 40%;
+}
+
+.price-block {
+  padding-bottom: 2rem;
+  -webkit-box-shadow: 3px 7px 10px 0px rgba(0, 0, 0, 0.17);
+          box-shadow: 3px 7px 10px 0px rgba(0, 0, 0, 0.17);
+  text-align: center;
+  border: 1px solid #61dafb;
+  border-radius: 5px;
+  overflow: hidden;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.price-block:hover {
+  -webkit-box-shadow: 10px 15px 24px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 10px 15px 24px 0px rgba(0, 0, 0, 0.3);
+}
+
+.price-block:hover .price-block-btn {
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+
+.price-block-title {
+  padding: 1rem;
+  color: #ffffff;
+  background-color: #61dafb;
+}
+
+.price-block-title h4 {
+  font-size: 1.9rem;
+}
+
+.price-block-title span {
+  display: block;
+}
+
+.price-block-text {
+  padding: 1rem;
+  min-height: 15rem;
+}
+
+.price-block-text h5 {
+  margin-bottom: 1rem;
+}
+
+.price-block-text ul li {
+  margin-bottom: 1rem;
+}
+
+.price-block p {
+  font-size: 2rem;
+}
+
+.price-block-btn {
+  padding: 0.1rem 4rem;
+  position: relative;
+  bottom: 0;
+  right: 0;
+  -webkit-transform: translate(0%, 138%);
+          transform: translate(0%, 138%);
+  -webkit-transition: all 1s linear;
+  transition: all 1s linear;
+}
+
+.price-block-btn span {
+  display: block;
 }
 /*# sourceMappingURL=style.css.map */

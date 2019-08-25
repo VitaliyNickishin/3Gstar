@@ -3,20 +3,27 @@
 	&-block
 		padding: 1rem 2.8rem 4rem
 		min-height: 41rem
-		background-color: 
-		box-shadow: 7px 12px 21px 0px rgba(0, 0, 0, 0.17)
+		box-shadow: 3px 7px 10px 0px rgba(0, 0, 0, 0.17)
 		text-align: center
+		overflow: hidden
+		transition: all 0.2s
+		&:hover
+			box-shadow: 10px 15px 24px 0px rgba(0, 0, 0, 0.3) 
+			.decision-block-img
+			 transform: scale(1.2)
 		h4
 			margin: 3rem 0rem
 			font-size: 1.9rem
-		img
-			margin-bottom: 2rem
-			display: inline-block
-			//width: 100%
-   max-height: 258px
-			//max-width: 30rem
+		&-img
+			transition: all 1s linear
+			img
+				margin-bottom: 2rem
+				display: inline-block
+				max-height: 258px
+				width: 100%
   p
-   min-height: 3rem
+			font-size: 1.1rem
+   min-height: 4rem
 
 .allegiance
  margin-top: 2rem
