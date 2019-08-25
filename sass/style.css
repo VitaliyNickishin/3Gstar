@@ -53,6 +53,10 @@ ul {
   text-transform: uppercase;
 }
 
+.section-subtitle {
+  font-size: 1.3rem;
+}
+
 .section__title {
   margin-bottom: 3rem;
 }
@@ -355,6 +359,10 @@ ul {
   font-size: 1.6rem;
 }
 
+.decision-title p {
+  font-size: 0.5rem;
+}
+
 .decision-block {
   padding: 1rem 2.8rem 4rem;
   min-height: 41rem;
@@ -491,7 +499,7 @@ ul {
 
 .price-block-text {
   padding: 1rem;
-  min-height: 15rem;
+  min-height: 18rem;
 }
 
 .price-block-text h5 {
@@ -519,5 +527,27 @@ ul {
 
 .price-block-btn span {
   display: block;
+}
+
+.price-employee {
+  background-color: #ffffff;
+}
+
+.price-employee-block {
+  border: 1px solid #ececec;
+}
+
+.price-employee-block-title {
+  color: #222222;
+  background-color: #ececec;
+}
+
+.price-employee-block-btn {
+  background-color: #ececec;
+}
+
+.price-employee-block-btn:hover {
+  background-color: lightgray;
+  color: #222222;
 }
 /*# sourceMappingURL=style.css.map */
