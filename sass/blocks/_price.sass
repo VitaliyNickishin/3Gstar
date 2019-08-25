@@ -2,7 +2,7 @@
  &-title
 	&-block
 		padding-bottom: 2rem
-		// min-height: 41rem
+		// min-height: 37rem
   box-shadow: 3px 7px 10px 0px rgba(0, 0, 0, 0.17)
 		text-align: center
   border: 1px solid $scBlue
@@ -16,7 +16,8 @@
     transform: translate(0, 0)
 
   &-title
-   padding: 1rem
+   min-height: 7rem
+   padding: 0.3rem
    color: $mainWhite
    // min-height: 5rem
    background-color: $scBlue
@@ -45,3 +46,22 @@
    // margin-bottom: 2rem
    span
     display: block
+
+@media screen and (max-width: 768px)
+ .price
+  &-title
+  &-block
+   margin-bottom: 2rem
+   &-title
+    h4
+    span
+   &-text
+    h5
+    ul
+     li
+   p
+   &-btn
+    transform: translate(0%, 0%)
+    color: $mainBlack
+    span
+     color: $mainBlack

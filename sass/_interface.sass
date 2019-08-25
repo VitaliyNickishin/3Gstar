@@ -56,8 +56,57 @@ ul
 		//background-color: darken($scBlue, 20%)
   color: $mainBlue
 	
+/*Изменение настроек стандартных точек слайдера slick*/
+/*отключаем padding чтоб были по центру */
+.slick-dots
+ margin: 30px auto
+ padding: 0
+ display: flex
+ justify-content: center
+ align-items: center
+ list-style: none
+ li //стилизируем точки
+  margin: 5px
+  width: 10px
+  height: 10px
+  background-color: $mainWhite
+  border-radius: 50%
+  &:hover
+   cursor: pointer
+  &.slick-active
+   background-color: $scBlue
+ button //убираем кнопки с цифрами
+  display: none 
 
 
 
+  /*Изменение настроек стандартных кнопок(стрелок) слайдера slick*/
+  /*отключаем padding чтоб были по центру с св-ми top и  transform*/
+.arrow
+ padding: 0
+ background-repeat: no-repeat
+ background-position: 50% 50%
+ background-color: transparent
+ height: 25px
+ width: 20px
+ position: absolute
+ top: 50%
+ transform: translateY(-50%)
+ &:hover
+  cursor: pointer
+
+.slick-prev
+ background-image: url(../img/reviews/left.svg)
+ left: -30px
+ 
+.slick-next
+ background-image: url(../img/reviews/right.svg)
+ right: -30px
 
 
+
+@media (max-width: 400px)
+ .slick-prev
+  left: -10px
+ .slick-next
+  right: -10px

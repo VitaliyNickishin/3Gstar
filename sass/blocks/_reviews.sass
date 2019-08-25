@@ -1,0 +1,56 @@
+.reviews
+ background-color: 
+ &-slider
+  display: flex
+  justify-content: space-around
+  position: relative
+  &__dots
+   position: absolute
+   bottom: -50px
+  
+  &__item
+   margin: 0 5px
+   //margin: auto
+   text-align: center
+  &__text
+   padding: 20px
+   margin-bottom: 20px
+   position: relative
+   font-size: 15px
+   font-style: italic
+   max-width: 370px
+   background-color: #fff
+   border-radius: 10px
+   &:after //треугольник вниз 
+    content: ""
+    position: absolute
+    bottom: -25px
+    left: 50%
+    transform: translateX(-50%)
+    height: 10px
+    border: 10px solid transparent
+    border-top: 10px solid #fff
+
+  &__image
+   margin: 20px auto
+   width: 70px
+   border: 2px solid #6a99e9
+   border-radius: 60%
+  &__name
+   display: block
+
+@media (max-width: 768px)
+ .reviews
+  &-slider
+   max-width: 640px
+   margin: auto
+
+@media (max-width: 576px)
+ .reviews
+  &-slider
+   max-width: 320px
+   margin: auto
+   &__item
+    margin-bottom: 80px
+   &__dots
+    bottom: 10px
