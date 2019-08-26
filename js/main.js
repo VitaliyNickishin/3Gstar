@@ -4,6 +4,10 @@ $('.navbar-toggler').on('click', function(e) {
  $(this).toggleClass('navbar-toggler_active');//находим.navbar-toggler и создаем класс navbar-toggler_active для переварачивания полосок
  
 });
+/*выпадающее меню в навигации*/
+$('.navbar-toggler').on('click', function(){
+  $('.menu').toggleClass('menu_active');
+});
 
 /*слайдер slick для блока reviews*/
 $(".reviews-slider").slick({

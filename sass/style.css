@@ -261,6 +261,9 @@ p {
 
 .header {
   background-color: #0897f5;
+  position: fixed;
+  width: 100%;
+  z-index: 99;
 }
 
 .mobile-number {
@@ -290,7 +293,50 @@ p {
   width: 1.1rem;
 }
 
+.menu {
+  position: fixed;
+  top: 83px;
+  left: 0;
+  padding: 16px 0;
+  width: 100%;
+  background-color: #0897f5;
+  -webkit-transform: translateY(-240%);
+          transform: translateY(-240%);
+}
+
+.menu_active {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.menu__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.menu__link {
+  text-decoration: none;
+  font-size: 17px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 1200px) {
+  .menu {
+    top: 73px;
+  }
+}
+
 @media screen and (max-width: 992px) {
+  .menu {
+    top: 63px;
+  }
   .mobile-number {
     font-size: 0.7rem;
   }
@@ -318,6 +364,18 @@ p {
 }
 
 @media screen and (max-width: 768px) {
+  .menu {
+    top: 44px;
+  }
+  .menu__nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .menu__link {
+    margin-bottom: 1rem;
+  }
   .mobile-number {
     font-size: 0.45rem;
   }
@@ -383,20 +441,6 @@ p {
   }
 }
 
-/*меню*/
-.navbar-nav {
-  margin: 0 auto;
-  padding-top: 15px;
-  /*Активная ссылка-Главная*/
-  /*Остальные ссылки*/
-}
-
-.navbar-nav .nav-link {
-  text-transform: uppercase;
-  position: relative;
-}
-
-/*кнока меню*/
 .navbar-toggler {
   width: 82px;
   height: 73px;
@@ -458,17 +502,11 @@ p {
   .navbar-toggler {
     height: 65px;
   }
-  .nav-link {
-    font-size: 0.6rem;
-  }
 }
 
 @media screen and (max-width: 768px) {
   .navbar-toggler {
     height: 50px;
-  }
-  .nav-link {
-    font-size: 0.5rem;
   }
 }
 
@@ -476,21 +514,16 @@ p {
   .navbar-toggler {
     height: 40px;
   }
-  .nav-link {
-    font-size: 0.4rem;
-  }
-}
-
-@media screen and (max-width: 350px) {
-  .nav-link {
-    font-size: 0.3rem;
-  }
 }
 
 .main {
   background-image: url("../../img/main/1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.main-title {
+  margin-top: 7rem;
 }
 
 .main-title h1 {
@@ -507,6 +540,7 @@ p {
 
 /*Оформление форм*/
 .form {
+  margin-top: 7rem;
   background-color: transparent;
   padding: 1rem 1rem;
   text-align: center;
@@ -593,11 +627,22 @@ p {
   text-align: center;
 }
 
+.allegiance p {
+  font-size: 1.5rem;
+}
+
 .benefit {
-  background-color: #ffffff;
+  background-image: url("../../img/benefit/3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.benefit-title {
+  color: #ffffff;
 }
 
 .benefit-block {
+  background-color: #ececec;
   margin-bottom: 2rem;
   border: 1px solid #61dafb;
   border-radius: 5px;

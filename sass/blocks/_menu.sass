@@ -1,53 +1,27 @@
 .navbar
- //position: relative
-/*меню*/
-.navbar-nav
-	margin: 0 auto
-	padding-top: 15px
- //background-color: $scBlue
- //position: absolute
- //width: 100%
- //position: relative
- //width: 768px
- //left: -336px
- //width: 100%
-	/*Активная ссылка-Главная*/
-	
-		/*Остальные ссылки*/		
-	.nav-link
-		//color: $body-text
-		text-transform: uppercase
-		position: relative
-
-		
-
-
-
-
-/*кнока меню*/
-.navbar-toggler
-	width: 82px
-	height: 73px
-	position: relative
-	border: 0
-	span, span::before, span::after
-		position: absolute
-  top: 50%
-  margin-top: -2px
-  left: 50%
-  margin-left: -15px
-  width: 30px
-  height: 4px
-  background-color: #fff
-	 border-radius: 3px
- span::before, span::after 
-  content: ''
-  display: block
-  transition: 0.2s
- span::before 
-  transform: translateY(-7px)
-	span::after 
-  transform: translateY(7px)
+ &-toggler
+  width: 82px
+  height: 73px
+  position: relative
+  border: 0
+  span, span::before, span::after
+   position: absolute
+   top: 50%
+   margin-top: -2px
+   left: 50%
+   margin-left: -15px
+   width: 30px
+   height: 4px
+   background-color: #fff
+   border-radius: 3px
+  span::before, span::after 
+   content: ''
+   display: block
+   transition: 0.2s
+  span::before 
+   transform: translateY(-7px)
+  span::after 
+   transform: translateY(7px)
 
 /*при клике на меню средняя полоса обнуляется*/
 .navbar-toggler_active span 
@@ -66,24 +40,26 @@
 
 
 
+
+
 @media screen and (max-width: 992px)
  .navbar-toggler
   height: 65px
- .nav-link
-  font-size: 0.6rem
+ // .nav-link
+ //  font-size: 0.6rem
 @media screen and (max-width: 768px)
  .navbar-toggler
   height: 50px
   span, span::before, span::after
   
- .nav-link
-  font-size: 0.5rem
+ // .nav-link
+ //  font-size: 0.5rem
 
 @media screen and (max-width: 450px)
  .navbar-toggler
   height: 40px
- .nav-link
-  font-size: 0.4rem
+ // .nav-link
+ //  font-size: 0.4rem
 @media screen and (max-width: 350px)
- .nav-link
-  font-size: 0.3rem
+ // .nav-link
+ //  font-size: 0.3rem

@@ -1,5 +1,9 @@
 .header
  background-color: $mainBlue
+ position: fixed
+ width: 100%
+ z-index: 99
+ 
  
 
 .mobile-number
@@ -23,8 +27,36 @@
    margin-right: 0.3rem
    width: 1.1rem
 
+.menu
+ position: fixed
+ top: 83px
+ left: 0
+ padding: 16px 0
+ width: 100%
+ background-color: $mainBlue
+ // z-index: 0
+ // transition: 0.2s
+ transform: translateY(-240%)
+ &_active
+  transform: translateY(0)
+ &__nav
+  display: flex
+  align-items: center
+  justify-content: space-around
+ &__link
+  text-decoration: none
+  font-size: 17px
+  text-transform: uppercase
+  color: $mainWhite
+
+
+@media screen and (max-width: 1200px)
+ .menu
+  top: 73px
+
 @media screen and (max-width: 992px)
- .header
+ .menu
+  top: 63px
   
  .mobile-number
   font-size: 0.7rem
@@ -48,7 +80,12 @@
   padding: 0
 
 @media screen and (max-width: 768px)
- .header
+ .menu
+  top: 44px
+  &__nav
+   flex-direction: column
+  &__link
+   margin-bottom: 1rem
   
  .mobile-number
   font-size: 0.45rem
